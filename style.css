@@ -1,0 +1,113 @@
+body{
+    margin:0;
+    padding:0;
+    width:100vw;
+    height: 100vh;
+    background-color: rgba(255, 151, 151, 1);
+    font-size: 62.5%;
+    display:flex;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#leftSide{
+    width: 35%;
+}
+
+#largeinputs input{
+    width: 90%;
+}
+
+#leftSide textarea{
+    width: 90%;
+}
+
+#leftSide h1{
+    text-align: center;
+    color:white;
+    font-size: 1.8rem;
+}
+
+
+#leftSide label{
+    color: white;
+}
+
+#leftSide form{
+    margin-left:1rem;
+    
+}
+
+#leftSide h3{
+    color:white;
+    text-align: center;
+}
+
+
+#study{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#buttons{
+    padding-top: 1rem;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#buttons #confirmbtn{
+    border-radius: 5px;
+    padding:0.3em 0.6em;
+    background-color: rgba(103, 79, 255, 1);
+    color:#e5e5e5;
+    font-size: 0.6rem;
+    outline: none;
+}
+
+#buttons #resetbtn{
+    border-radius: 5px;
+    padding:0.3em 0.9em;
+    background-color: rgba(255, 50, 50, 1);
+    color: #e5e5e5;
+    font-size: 0.6rem;
+    outline: none;
+}
+
+#confirmbtn:hover {
+    cursor: pointer;
+    color: white;
+}
+
+#resetbtn:hover{
+    cursor: pointer;
+    color: white;
+}
+
+#rightSide{
+    margin-top: 2rem;
+    width: 65%;
+    height: 100%;
+    padding-top:1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table{
+    width: 90%;
+    height: auto;
+    border-collapse: collapse;
+    font-size: 0.5rem;
+    color:black;
+    background-color: white;
+}
+th, td{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 151, 151, 1);
+}
+
+th {
+    font-size: 0.5rem;
+}

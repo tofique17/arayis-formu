@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Arayış formu</title>
+</head>
+<body>
+    <section id="leftSide">
+        <h1>Arayış formu</h1>
+        <form id="largeinputs">
+        <label for="firstName">Ad</label> <br>
+        <input type="text" name="firstName" id="firstName"> <br> <br>
+    <label for="lastName">Soyad</label> <br>
+        <input type="text" name="lastName" id="lastName"> <br><br>
+    <label for="ataAdi">Ata adı</label> <br>
+        <input type="text" name="ataAdi" id="fathersName"> <br><br>
+    <label for="telefonNomresi">Telefon nömrəsi</label><br>
+        <input type="tel" name="telefonNomresi" id="telNumber" ><br><br>    
+    <label for="unvan">Ünvan</label> <br> 
+     
+
+        <textarea name="unvan" id="location"
+                  rows="4">
+    </textarea>   <br> <br>
+    </form>
+
+    <form id="workingandmarriage">
+    <input type="checkbox" name="working" id ="working">
+    <label for="working"> İşləyir </label><br>
+    <input type="checkbox"  name="marriage" id="marriage">
+    <label for="marriage"> Evli </label><br>
+    </form>
+
+    <h3>Təhsili</h3>
+    <form id="study">
+    <input type="radio" id="orta" name="study" value="Orta">
+    <label for="orta" style="padding-right:2.4rem">Orta</label><br>
+    <input type="radio" id="ali" name="study" value="Ali">
+    <label for="ali" style="padding-right:2.4rem">Ali</label><br>
+    <input type="radio" id="tamorta" name="study" value="Tam orta">
+    <label for="tamorta" style="padding-right:2.4rem">Tam orta</label><br><br>
+    </form>
+
+    <div id="buttons">
+      <button id="confirmbtn" onclick="confirm()">Təsdiqlə</button>
+      <button id="resetbtn" onclick="sifirla()">Sıfırla</button>  
+    </div>
+
+     
+    </section>
+    <section id="rightSide">
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th>Ad</th>
+                    <th>Soyad</th>
+                    <th>Ata adı</th>
+                    <th>Ünvan</th>
+                    <th>Təhsil</th>
+                    <th>İşləyir</th>
+                    <th>Evli</th>
+                    
+                </tr>
+            </thead>
+        </table>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
