@@ -5,6 +5,12 @@ let telNomre = document.querySelector("#telNumber");
 let unvan = document.querySelector("#location");
 let ele = document.getElementsByName("study");
 
+const cb1 = document.querySelector('#marriage');
+const cb2 = document.querySelector('#working');
+
+const ortaChecker = document.querySelector('#orta');
+const aliChecker = document.querySelector('#ali');
+const tamortaChecker = document.querySelector('#tamorta');
 
 function sifirla(){
 ad.value = "";
@@ -35,7 +41,29 @@ cell2.textContent = soyad.value;
 cell3.textContent = ataAdi.value;
 cell4.textContent = unvan.value;
 
+if(cb1.checked){
+      cell7.textContent = "Bəli";
+}
+else{
+      cell7.textContent = "Xeyr"; //checking marriage
+}
 
+if(cb2.checked){
+      cell6.textContent = "Bəli";
+} else{
+      cell6.textContent = "Xeyr"; //checking working
+}
 
+if(aliChecker.checked){
+      cell5.textContent = "Ali";
+}
+
+if(ortaChecker.checked){
+      cell5.textContent = "Orta";
+}
+
+if(tamortaChecker.checked){
+      cell5.textContent = "Tam orta";
+}
 
 }
